@@ -44,7 +44,6 @@ const Navbar = () => {
                                 />
                             </div>
 
-                            {/* LINKS */}
 
                             <div className="hidden lg:block m-auto">
                                 <div className="flex space-x-4">
@@ -65,25 +64,16 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        {/* SIGNIN DIALOG */}
-
                         <Signdialog />
 
 
-                        {/* REGISTER DIALOG */}
 
                         <Registerdialog />
 
 
-                        {/* DRAWER FOR MOBILE VIEW */}
-
-                        {/* DRAWER ICON */}
-
                         <div className='block lg:hidden'>
                             <Bars3Icon className="block h-6 w-6" aria-hidden="true" onClick={() => setIsOpen(true)} />
                         </div>
-
-                        {/* DRAWER LINKS DATA */}
 
                         <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
                             <Drawerdata />

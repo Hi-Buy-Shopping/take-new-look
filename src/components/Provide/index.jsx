@@ -16,7 +16,7 @@ const Aboutdata = [
     },
     {
         imgSrc: "/assets/provide/heaking.svg",
-        country: "Heaking",
+        country: "Website",
         paragraph: 'Follow a hashtag total posts, videos',
 
     },
