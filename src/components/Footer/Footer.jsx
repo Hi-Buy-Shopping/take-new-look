@@ -16,7 +16,7 @@ const products = [
 const footer = () => {
     return (
         <div className="bg-darkblue mt-10">
-            <div className="mx-auto max-w-2xl pt-48 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+            <div className="mx-auto max-w-2xl pt-8 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
                 <div className="my-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
 
 
@@ -48,8 +48,6 @@ const footer = () => {
                         </div>
                     ))}
 
-                    {/* CLOUMN-4 */}
-
                     <div className='col-span-4 md:col-span-4 lg:col-span-4'>
                         <div className="flex gap-2">
                             <img src={'/assets/footer/mask.svg'} alt="mask-icon" width={24} height={24} />
@@ -61,13 +59,11 @@ const footer = () => {
                         </div>
                         <div className="flex gap-2 mt-10">
                             <img src={'/assets/footer/email.svg'} alt="email-icon" width={24} height={24} />
-                            <h5 className="text-base font-normal text-offwhite">raheeqgillofficial@gmail.com</h5>
+                            <h5 className="text-base font-normal text-offwhite">takenewlooks@gmail.com</h5>
                         </div>
                     </div>
 
                 </div>
-
-                {/* All Rights Reserved */}
 
                 <div className='py-10 lg:flex items-center justify-between border-t border-t-bordertop'>
                     <h4 className='text-offwhite text-sm text-center lg:text-start font-normal'>@2025 TAKENEWLOOK. All Rights Reserved by <Link href="https://hibuyshopping.com/" target="_blank"> Raheeq Gill</Link></h4>

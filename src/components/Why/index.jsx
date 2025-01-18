@@ -20,15 +20,12 @@ const Why = () => {
     return (
         <div id="about">
 
-            <div className='mx-auto max-w-7xl px-4 my-20 sm:py-20 lg:px-8'>
+            <div className='mx-auto max-w-7xl px-4 mb-10 sm:py-20 lg:px-8'>
                 <div className='grid grid-cols-1 lg:grid-cols-2'>
-
-                    {/* COLUMN-1 */}
                     <div className="lg:-ml-64">
                         <img src="/assets/why/iPad.png" alt="iPad-image" width={4000} height={900} />
                     </div>
 
-                    {/* COLUMN-2 */}
                     <div>
                         <h3 className="text-4xl lg:text-5xl pt-4 font-semibold sm:leading-tight mt-5 text-center lg:text-start">Why we best?</h3>
                         <h4 className="text-lg pt-4 font-normal sm:leading-tight text-center text-beach lg:text-start">Dont waste time on search manual tasks. Let Automation do it for you. Simplify workflows, reduce errors, and save time.</h4>

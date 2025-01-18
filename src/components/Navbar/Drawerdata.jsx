@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
-  { name: 'Services', href: '#services', current: false },
+  { name: 'Services', href: '/services', current: false },
   { name: 'About', href: '/about-us', current: false },
-  { name: 'Project', href: '#project', current: false },
-  { name: 'Help', href: '/', current: false },
+  { name: 'Projects', href: '/projects', current: false },
+  { name: 'Help', href: '/contact-us', current: false },
 ]
 
 function classNames(...classes) {
