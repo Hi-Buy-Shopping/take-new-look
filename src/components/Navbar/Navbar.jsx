@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 const navigation = [
     { name: 'Home', href: '/', current: true },
     { name: 'Services', href: '#services', current: false },
-    { name: 'About', href: '#about', current: false },
+    { name: 'About', href: '/about-us', current: false },
     { name: 'Project', href: '#project', current: false },
     { name: 'Help', href: '/', current: false },
 ]
@@ -50,7 +50,7 @@ const Navbar = () => {
                                     {navigation.map((item) => (
                                         <Link
                                             key={item.name}
-                                            href={item.href}
+                                            to={item.href}
                                             className={classNames(
                                                 item.current ? ' text-black hover:opacity-100' : 'hover:text-black hover:opacity-100',
                                                 'px-3 py-4 text-lg font-normal opacity-75 space-links'
