@@ -1,17 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 const navigation = [
-  { name: 'Home', href: '/', current: true },
-  { name: 'Services', href: '/services', current: false },
-  { name: 'About', href: '/about-us', current: false },
-  { name: 'Projects', href: '/projects', current: false },
-  { name: 'Help', href: '/contact-us', current: false },
-]
+  { name: "Home", href: "/", current: true },
+  { name: "Services", href: "/services", current: false },
+  { name: "About", href: "/about-us", current: false },
+  { name: "Projects", href: "/projects", current: false },
+  { name: "Help", href: "/contact-us", current: false },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 const Data = () => {
@@ -25,26 +24,30 @@ const Data = () => {
                 key={item.name}
                 to={item.href}
                 className={classNames(
-                  item.current ? 'text-black hover:opacity-100' : 'hover:text-black hover:opacity-100',
-                  'px-2 py-1 text-lg font-normal opacity-75 block'
+                  item.current
+                    ? "text-black hover:opacity-100"
+                    : "hover:text-black hover:opacity-100",
+                  "px-2 py-1 text-lg font-normal opacity-75 block"
                 )}
-                aria-current={item.current ? 'page' : undefined}
+                aria-current={item.current ? "page" : undefined}
               >
                 {item.name}
               </Link>
             ))}
             <div className="mt-4"></div>
-            <button className="bg-white w-full text-blue border border-lightblue font-medium py-2 px-4 rounded">
+            {/* <button className="bg-white w-full text-blue border border-lightblue font-medium py-2 px-4 rounded">
               Sign In
-            </button>
-            <button className="bg-lightblue w-full hover:bg-blue hover:text-white text-blue font-medium my-2 py-2 px-4 rounded">
-              Sign up
-            </button>
+            </button> */}
+            <Link to={"/contact-us"}>
+              <button className="bg-lightblue w-full hover:bg-blue hover:text-white text-blue font-medium my-2 py-2 px-4 rounded">
+                Contact Us
+              </button>
+            </Link>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Data;

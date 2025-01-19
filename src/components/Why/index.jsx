@@ -1,17 +1,18 @@
+import { TiInputCheckedOutline } from "react-icons/ti";
 
 
 const whydata = [
     {
         heading: "Quality",
-        subheading: "Follow a hashtag growth total posts, videos and images.more revitions",
+        subheading: "We deliver high-quality, custom solutions with expertise and dedication, always exceeding expectations.",
     },
     {
         heading: "Communication",
-        subheading: "Follow a hashtag growth total posts, videos and images.more revitions",
+        subheading: "We prioritize clear communication, delivering high-quality, custom solutions with expertise and dedication, ensuring your needs are always met.",
     },
     {
         heading: "Reliability",
-        subheading: "Follow a hashtag growth total posts, videos and images.more revitions",
+        subheading: "We are reliable, delivering high-quality, custom solutions with clear communication and dedication, always meeting your expectations.",
     }
 ]
 
@@ -28,13 +29,14 @@ const Why = () => {
 
                     <div>
                         <h3 className="text-4xl lg:text-5xl pt-4 font-semibold sm:leading-tight mt-5 text-center lg:text-start">Why we best?</h3>
-                        <h4 className="text-lg pt-4 font-normal sm:leading-tight text-center text-beach lg:text-start">Dont waste time on search manual tasks. Let Automation do it for you. Simplify workflows, reduce errors, and save time.</h4>
+                        <h4 className="text-lg pt-4 font-normal sm:leading-tight text-center text-beach lg:text-start">We combine expertise, creativity, and dedication to deliver high-quality, custom solutions that exceed expectations.</h4>
 
                         <div className="mt-10">
                             {whydata.map((items, i) => (
                                 <div className="flex mt-4" key={i}>
-                                    <div className="rounded-full h-10 w-12 flex items-center justify-center bg-circlebg">
-                                        <img src="/assets/why/check.svg" alt="check-image" width={24} height={24} />
+                                    <div className="rounded-full h-12 w-12 p-1 flex items-center justify-center bg-circlebg">
+                                        <img src="/assets/why/check.svg" alt="check-image" className="w-full h-full" />
+                                        {/* <TiInputCheckedOutline size={30} className="text-green-500" /> */}
                                     </div>
                                     <div className="ml-5">
                                         <h4 className="text-2xl font-semibold">{items.heading}</h4>

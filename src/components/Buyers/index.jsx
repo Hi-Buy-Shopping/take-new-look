@@ -4,25 +4,25 @@ const cardData = [
         imgSrc: '/assets/buyers/ourbuyers.svg',
         percent: '90+',
         heading: "Our buyers",
-        subheading: "Follow a hashtag growth total posts, videos and images.",
+        subheading: "Our Buyers, Trusted Partners on the Journey to Excellence!",
     },
     {
         imgSrc: '/assets/buyers/projectcompleted.svg',
         percent: '100+',
         heading: "Project completed",
-        subheading: "Follow a hashtag growth total posts, videos and images.",
+        subheading: "Over 100 Projects Completed with Precision and Excellence!",
     },
     {
         imgSrc: '/assets/buyers/happybuyers.svg',
         percent: '99%',
         heading: "Happy buyers",
-        subheading: "Follow a hashtag growth total posts, videos and images.",
+        subheading: "99% Happy Buyers, Because Your Satisfaction Drives Us!",
     },
     {
         imgSrc: '/assets/buyers/teammembers.svg',
         percent: '50+',
         heading: "Team members",
-        subheading: "Follow a hashtag growth total posts, videos and images.",
+        subheading: "50+ Dedicated Team Members, United to Deliver Success!",
     }
 
 ]

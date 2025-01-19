@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { FaCode, FaMobileAlt, FaRocket } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const WebDevelopment = () => {
   useEffect(() => {
@@ -20,9 +21,11 @@ const WebDevelopment = () => {
           <p className="md:text-lg text-sm">
             Crafting modern, responsive, and innovative websites for your business.
           </p>
-          <button className="mt-6 px-6 py-3 bg-lightblue hover:bg-blue-700 rounded text-blue font-semibold">
-            Get Started
-          </button>
+          <Link to="/contact-us">
+            <button className="mt-6 px-6 py-3 bg-lightblue hover:bg-blue-700 rounded text-blue font-semibold">
+              Get Started
+            </button>
+          </Link>
         </div>
       </section>
       <div className="container mx-auto p-6">
@@ -43,7 +46,7 @@ const WebDevelopment = () => {
               <li>Custom functionalities</li>
               <li>Optimized for performance</li>
             </ul>
-            <button className="block mx-auto px-4 py-2 bg-white text-blue-600 font-semibold rounded-full hover:bg-gray-200">
+            <button className="block mx-auto px-4 py-2 bg-white text-blue-500 font-semibold rounded-full hover:bg-gray-200">
               Learn More
             </button>
           </div>

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { FaSearch, FaChartLine, FaRegClock } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const SEO = () => {
   useEffect(() => {
@@ -19,11 +20,14 @@ const SEO = () => {
             Professional SEO Services
           </h1>
           <p className="md:text-lg text-sm">
-            Boost your website’s visibility and rank higher on search engines with our expert SEO strategies.
+            Boost your website’s visibility and rank higher on search engines
+            with our expert SEO strategies.
           </p>
-          <button className="mt-6 px-6 py-3 bg-lightblue hover:bg-blue-700 rounded text-blue font-semibold">
-            Get Started
-          </button>
+          <Link to="/contact-us">
+            <button className="mt-6 px-6 py-3 bg-lightblue hover:bg-blue-700 rounded text-blue font-semibold">
+              Get Started
+            </button>
+          </Link>
         </div>
       </section>
 
@@ -38,25 +42,27 @@ const SEO = () => {
               On-Page SEO
             </h3>
             <p className="text-base mb-4 text-white text-center">
-              Optimize your website’s content, structure, and keywords for better search engine rankings.
+              Optimize your website’s content, structure, and keywords for
+              better search engine rankings.
             </p>
             <ul className="list-disc text-white list-inside text-gray-200 mb-4">
               <li>Keyword Research</li>
               <li>Meta Tags Optimization</li>
               <li>Content SEO</li>
             </ul>
-            <button className="block mx-auto px-4 py-2 bg-white text-blue-600 font-semibold rounded-full hover:bg-gray-200">
+            <button className="block mx-auto px-4 py-2 bg-white text-blue-500 font-semibold rounded-full hover:bg-gray-200">
               Learn More
             </button>
           </div>
 
-          <div className="bg-gradient-to-br from-green-500 via-teal-500 to-blue-600 shadow-lg rounded-xl p-6 hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+          <div className="bg-gradient-to-br from-green-500 via-teal-500 to-blue-500 shadow-lg rounded-xl p-6 hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
             <FaChartLine className="text-5xl text-white mb-4 mx-auto" />
             <h3 className="md:text-2xl text-xl font-bold text-center mb-4 text-white">
               Off-Page SEO
             </h3>
             <p className="text-base mb-4 text-white text-center">
-              Build your website’s authority and increase traffic with link-building strategies.
+              Build your website’s authority and increase traffic with
+              link-building strategies.
             </p>
             <ul className="list-disc text-white list-inside text-gray-200 mb-4">
               <li>Backlink Building</li>
@@ -74,7 +80,8 @@ const SEO = () => {
               Technical SEO
             </h3>
             <p className="text-base mb-4 text-white text-center">
-              Improve your site’s performance, speed, and indexability for seamless user experience.
+              Improve your site’s performance, speed, and indexability for
+              seamless user experience.
             </p>
             <ul className="list-disc text-white list-inside text-gray-200 mb-4">
               <li>Website Speed Optimization</li>
@@ -95,7 +102,10 @@ const SEO = () => {
             Why Choose Our SEO Services?
           </h2>
           <p className="text-darkgray text-sm leading-6 my-4">
-            Search Engine Optimization is essential for growing your online presence and driving organic traffic. Our team of SEO experts uses proven strategies tailored to your business needs, ensuring you stand out from the competition.
+            Search Engine Optimization is essential for growing your online
+            presence and driving organic traffic. Our team of SEO experts uses
+            proven strategies tailored to your business needs, ensuring you
+            stand out from the competition.
           </p>
         </div>
         <div>
@@ -103,10 +113,15 @@ const SEO = () => {
             Our Expertise in SEO
           </h2>
           <p className="text-darkgray text-sm leading-6 my-4">
-            Whether you’re a local business or a global brand, we help you achieve higher rankings, more visibility, and better ROI. We understand the importance of targeting the right audience and delivering measurable results.
+            Whether you’re a local business or a global brand, we help you
+            achieve higher rankings, more visibility, and better ROI. We
+            understand the importance of targeting the right audience and
+            delivering measurable results.
           </p>
           <p className="text-darkgray text-sm leading-6 my-4">
-            With a deep understanding of Google’s algorithms and the latest SEO trends, we create custom strategies to keep your website ahead in search engine results.
+            With a deep understanding of Google’s algorithms and the latest SEO
+            trends, we create custom strategies to keep your website ahead in
+            search engine results.
           </p>
         </div>
         <div>
@@ -114,7 +129,9 @@ const SEO = () => {
             Start Optimizing Today
           </h2>
           <p className="text-darkgray text-sm leading-6 my-4">
-            Ready to drive organic growth and boost your website’s performance? Let’s get started with a tailored SEO plan that meets your business goals.
+            Ready to drive organic growth and boost your website’s performance?
+            Let’s get started with a tailored SEO plan that meets your business
+            goals.
           </p>
         </div>
       </div>

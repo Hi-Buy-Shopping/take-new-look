@@ -4,6 +4,7 @@ import {
   FaLaptopCode,
   FaCloud,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ApplicationDevelopment = () => {
   useEffect(() => {
@@ -25,9 +26,11 @@ const ApplicationDevelopment = () => {
           <p className="md:text-lg text-sm">
             Transform your ideas into powerful, scalable applications.
           </p>
-          <button className="mt-6 px-6 py-3 bg-lightblue hover:bg-blue-700 rounded text-blue font-semibold">
-            Get Started
-          </button>
+          <Link to="/contact-us">
+            <button className="mt-6 px-6 py-3 bg-lightblue hover:bg-blue-700 rounded text-blue font-semibold">
+              Get Started
+            </button>
+          </Link>
         </div>
       </section>
 
@@ -49,7 +52,7 @@ const ApplicationDevelopment = () => {
               <li>Cross-platform solutions</li>
               <li>Seamless user experience</li>
             </ul>
-            <button className="block mx-auto px-4 py-2 bg-white text-blue-600 font-semibold rounded-full hover:bg-gray-200">
+            <button className="block mx-auto px-4 py-2 bg-white text-blue-500 font-semibold rounded-full hover:bg-gray-200">
               Learn More
             </button>
           </div>

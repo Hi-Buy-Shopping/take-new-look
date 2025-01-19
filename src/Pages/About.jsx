@@ -13,7 +13,7 @@ const AboutUs = () => {
             backgroundImage: "url('/assets/banner/page-banner.jpg')",
           }}
         ></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-600/50 to-blue-900/70 flex items-center justify-center">
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-500/50 to-blue-900/70 flex items-center justify-center">
           <h1 className="text-5xl font-extrabold text-white">About Us</h1>
         </div>
       </section>
@@ -41,7 +41,7 @@ const AboutUs = () => {
             <p>
               Pakistan is home to some of the most talented web developers in
               the world. At{" "}
-              <span className="text-blue-600 font-semibold">TakeNewLook</span>,
+              <span className="text-blue-500 font-semibold">TakeNewLook</span>,
               we’re proud to contribute to this growing community. Our
               developers are skilled in creating intuitive, responsive, and
               visually captivating websites that cater to both local and global
@@ -53,7 +53,7 @@ const AboutUs = () => {
           <CardSection title="Why Professional Web Development Company?">
             <p>
               Choosing a professional web development company like{" "}
-              <span className="text-blue-600 font-semibold">TakeNewLook</span>{" "}
+              <span className="text-blue-500 font-semibold">TakeNewLook</span>{" "}
               is the first step towards achieving your digital goals. We provide
               more than just technical solutions—we offer strategic insights,
               creative designs, and seamless user experiences. Our expertise

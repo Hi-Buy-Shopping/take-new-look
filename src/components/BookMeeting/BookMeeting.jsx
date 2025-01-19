@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useEffect } from "react";
 import { CiInstagram, CiLinkedin } from "react-icons/ci";
 import {
   FaPhoneAlt,
@@ -9,6 +9,9 @@ import {
 import { MdEmail } from "react-icons/md";
 
 const BookMeeting = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="min-h-screen">
       <section className="-z-10 relative">

@@ -15,6 +15,8 @@ import SEO from './Pages/Services/Seo';
 import ProductPhotography from './Pages/Services/ProductPhotography';
 import EcommerceSolutions from './Pages/Services/EcommerceSolutions';
 import UIUXDesign from './Pages/Services/UIUXDesign';
+import Projects from './Pages/Projects';
+import NotFound from './Pages/NotFound';
 
 function App() {
   return (
@@ -22,10 +24,12 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/*" element={<NotFound />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<BookMeeting />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/domain-hosting" element={<DomainHosting />} />
+        <Route path="/services/domain-hosting" element={<DomainHosting />} />
         <Route path="/services/web-development" element={<WebDevelopment />} />
         <Route path="/services/app-development" element={<ApplicationDevelopment />} />
         <Route path="/services/content-writing" element={<ContentWriting />} />

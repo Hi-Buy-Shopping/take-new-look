@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { FaCamera, FaImages, FaPalette } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ProductPhotography = () => {
   useEffect(() => {
@@ -21,13 +22,14 @@ const ProductPhotography = () => {
           <p className="md:text-lg text-sm">
             Showcase your products with stunning, high-quality photos that captivate your audience.
           </p>
+          <Link to={'/contact-us'} >
           <button className="mt-6 px-6 py-3 bg-lightblue hover:bg-blue-700 rounded text-blue font-semibold">
             Book a Session
           </button>
+          </Link>
         </div>
       </section>
 
-      {/* What We Offer Section */}
       <div className="container mx-auto p-6">
         <h2 className="md:text-3xl text-xl font-semibold text-center my-5 md:my-10 text-blue">
           What We Offer
@@ -46,12 +48,12 @@ const ProductPhotography = () => {
               <li>360-Degree Photography</li>
               <li>Macro Photography</li>
             </ul>
-            <button className="block mx-auto px-4 py-2 bg-white text-blue-600 font-semibold rounded-full hover:bg-gray-200">
+            <button className="block mx-auto px-4 py-2 bg-white text-blue-500 font-semibold rounded-full hover:bg-gray-200">
               Learn More
             </button>
           </div>
 
-          <div className="bg-gradient-to-br from-green-500 via-teal-500 to-blue-600 shadow-lg rounded-xl p-6 hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+          <div className="bg-gradient-to-br from-green-500 via-teal-500 to-blue-500 shadow-lg rounded-xl p-6 hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
             <FaImages className="text-5xl text-white mb-4 mx-auto" />
             <h3 className="md:text-2xl text-xl font-bold text-center mb-4 text-white">
               Lifestyle Photography

@@ -3,6 +3,7 @@ import {
   FaGlobe,
   FaServer,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const DomainHosting = () => {
   useEffect(() => {
@@ -21,9 +22,11 @@ const DomainHosting = () => {
           <p className="md:text-lg text-sm">
             Empower your online presence with our secure and reliable solutions.
           </p>
-          <button className="mt-6 px-6 py-3 bg-lightblue hover:bg-blue-700 rounded text-blue font-semibold">
-            Get Started
-          </button>
+          <Link to="/contact-us">
+            <button className="mt-6 px-6 py-3 bg-lightblue hover:bg-blue-700 rounded text-blue font-semibold">
+              Get Started
+            </button>
+          </Link>
         </div>
       </section>
       <div className="container mx-auto p-6">
@@ -45,7 +48,7 @@ const DomainHosting = () => {
               <li>Competitive pricing</li>
               <li>Easy management</li>
             </ul>
-            <button className="block mx-auto px-4 py-2 bg-white text-blue-600 font-semibold rounded-full hover:bg-gray-200">
+            <button className="block mx-auto px-4 py-2 bg-white text-blue-500 font-semibold rounded-full hover:bg-gray-200">
               Learn More
             </button>
           </div>
@@ -176,9 +179,11 @@ const DomainHosting = () => {
           <h3 className="text-2xl font-bold mb-4">
             Ready to get started with our services?
           </h3>
+          <Link to={'/contact-us'}>
           <button className="px-6 py-3 bg-white text-blue-500 font-semibold rounded hover:bg-gray-100">
             Contact Us Today
           </button>
+          </Link>
         </div>
       </div>
     </div>

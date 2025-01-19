@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { FaPenNib, FaFileAlt, FaChartLine } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ContentWriting = () => {
   useEffect(() => {
@@ -21,9 +22,11 @@ const ContentWriting = () => {
           <p className="md:text-lg text-sm">
             Captivating content that drives engagement and boosts your brand.
           </p>
-          <button className="mt-6 px-6 py-3 bg-lightblue hover:bg-blue-700 rounded text-blue font-semibold">
-            Get Started
-          </button>
+          <Link to="/contact-us">
+            <button className="mt-6 px-6 py-3 bg-lightblue hover:bg-blue-700 rounded text-blue font-semibold">
+              Get Started
+            </button>
+          </Link>
         </div>
       </section>
 
