@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -94,12 +95,12 @@ const Services = () => {
                 {service.title}
               </h3>
               <p className="text-gray-600 mb-4">{service.description}</p>
-              <a
-                href={service.link}
+              <Link
+                to={service.link}
                 className="text-[#1a2362] font-semibold hover:text-indigo-800 flex items-center"
               >
                 Read More <span className="ml-2">&rarr;</span>
-              </a>
+              </Link>
             </div>
           ))}
         </div>
