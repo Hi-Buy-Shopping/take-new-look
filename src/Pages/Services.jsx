@@ -7,7 +7,7 @@ const services = [
     title: "Domain & Hosting",
     description:
       "Just merely setting up a business is not the need of the hour. The first step is...",
-    link: "/domain-hosting/details",
+    link: "/domain-hosting",
   },
   {
     image: "/assets/services/development.jpg",
