@@ -9,7 +9,7 @@ const DomainHosting = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="">
+    <div>
       <section
         className="h-[500px] mt-16 flex items-center justify-center bg-cover bg-center text-white"
         style={{
