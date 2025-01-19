@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const services = [
   {
@@ -6,7 +6,7 @@ const services = [
     title: "Domain & Hosting",
     description:
       "Just merely setting up a business is not the need of the hour. The first step is...",
-    link: "#",
+    link: "/domain-hosting/details",
   },
   {
     image: "/assets/services/development.jpg",
@@ -60,6 +60,9 @@ const services = [
 ];
 
 const Services = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="min-h-screen bg-[#fcfcfc] py-12">
       <section className="relative">

@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const AboutUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="w-full bg-gray-50 text-gray-800">
       <section className="relative">

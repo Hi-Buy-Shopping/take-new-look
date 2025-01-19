@@ -6,6 +6,7 @@ import './App.css';
 import AboutUs from './Pages/About';
 import BookMeeting from './components/BookMeeting/BookMeeting';
 import Services from './Pages/Services';
+import DomainHosting from './Pages/DomainHosting';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<BookMeeting />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/domain-hosting/details" element={<DomainHosting />} />
       </Routes>
       <Footer />
     </BrowserRouter>

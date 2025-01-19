@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Banner from "../components/Banner/Banner";
 import Companies from "../components/Companies/Companies";
 import Buyers from "../components/Buyers/index";
@@ -9,6 +9,9 @@ import Clientsay from "../components/Clientsay/index";
 import Newsletter from "../components/Newsletter/Newsletter";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <main>
