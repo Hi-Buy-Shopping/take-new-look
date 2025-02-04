@@ -75,9 +75,11 @@ export default function Testimonials() {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-white p-6 rounded-2xl shadow-lg flex mb-10 mx-4 h-[300px] flex-col items-center text-center">
+              <div className="bg-white p-6 rounded-2xl shadow-lg flex mb-10 mx-4 h-[320px] flex-col items-center justify-between text-center">
+                <div className='flex flex-col items-center'>
                 <FaQuoteLeft className="text-3xl text-blue-500 mb-4" />
                 <p className="text-lg italic">"{testimonial.feedback}"</p>
+                </div>
                 <div className="mt-6 flex gap-4 items-center">
                   <img
                     src={testimonial.image}

@@ -51,9 +51,6 @@
 // export default Banner;
 import React from 'react';
 
-import Image from '../../assets/lawyer_banner.png';
-
-import Appointment from '../Appointment/Appointment';
 
 const Banner = () => {
   return (
@@ -81,7 +78,7 @@ const Banner = () => {
     //     </div>
     //   </div>
     // </section>
-    <div className="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-20 mt-24">
+    <div className="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-20 mt-20">
       <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-between">
         <div className="lg:w-1/2 mb-10 lg:mb-0 text-center lg:text-left animate-fade-in-up">
           <h1 className="text-5xl font-bold mb-6">

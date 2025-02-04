@@ -143,7 +143,6 @@ const BookMeeting = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Banner Section */}
       <section className="-z-10 relative">
         <div
           className="h-[400px] bg-cover bg-center"
@@ -154,10 +153,7 @@ const BookMeeting = () => {
           <div className="absolute inset-0 bg-blue-500/70 opacity-40"></div>
         </div>
       </section>
-
-      {/* Main Content */}
-      <div className="flex flex-col md:flex-row bg-white shadow-lg mx-6 sm:mx-10 -mt-10 rounded-[50px] overflow-hidden">
-        {/* Contact Info Section */}
+      <div className="flex flex-col md:flex-row bg-white shadow-lg mx-2 md:mx-10 -mt-10 rounded-[30px] overflow-hidden">
         <div className="bg-grey500 md:w-2/5 w-full p-8 flex flex-col items-start justify-center">
           <div className="mb-8 flex items-center space-x-4">
             <div className="flex items-center justify-center bg-[#41af1e] rounded-full w-10 h-10">
@@ -196,7 +192,6 @@ const BookMeeting = () => {
           </div>
         </div>
 
-        {/* Form Section */}
         <div className="bg-white md:w-3/5 w-full p-8 ">
           <h2 className="text-2xl font-bold text-gray-800 mb-6">Book a Meeting</h2>
           <form>
