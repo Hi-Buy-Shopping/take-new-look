@@ -7,6 +7,7 @@ import Why from "../components/Why/index";
 import Network from "../components/Network/index";
 import Clientsay from "../components/Clientsay/index";
 import Newsletter from "../components/Newsletter/Newsletter";
+import Testimonials from '../components/Testimonials/Testimonials'
 
 const Home = () => {
   useEffect(() => {
@@ -21,7 +22,8 @@ const Home = () => {
         <Provide />
         <Why />
         <Network />
-        <Clientsay />
+        {/* <Clientsay /> */}
+        <Testimonials/>
         <Newsletter />
       </main>
     </div>

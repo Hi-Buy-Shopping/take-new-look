@@ -1,19 +1,149 @@
+// import React, { useEffect } from "react";
+// import { CiInstagram, CiLinkedin } from "react-icons/ci";
+// import { FaPhoneAlt, FaMapMarkerAlt, FaFacebookF } from "react-icons/fa";
+// import { MdEmail } from "react-icons/md";
 
+// const BookMeeting = () => {
+//   useEffect(() => {
+//     window.scrollTo(0, 0);
+//   }, []);
+//   return (
+//     <div className="min-h-screen">
+//       <section className="-z-10 relative">
+//         <div
+//           className="h-[400px] bg-cover bg-center"
+//           style={{
+//             backgroundImage: "url('/assets/banner/page-banner-1.jpg')",
+//           }}
+//         >
+//           <div className="absolute inset-0 bg-blue-500/70 opacity-40"></div>
+//         </div>
+//       </section>
+
+//       <div className="flex flex-col md:flex-row bg-white shadow-lg mx-6 sm:mx-10 -mt-10 rounded-[50px]">
+//         <div className="bg-grey500 md:w-2/5 w-full p-8 flex flex-col items-start justify-center">
+//           <div className="mb-8 flex items-center space-x-4">
+//             <div className="flex items-center justify-center bg-[#41af1e] rounded-full w-10 h-10">
+//               <FaPhoneAlt className="inline-block text-white " />
+//             </div>
+//             <span>+92 3144363910</span>
+//           </div>
+//           <div className="mb-8 flex items-center space-x-4">
+//             <div className="flex items-center justify-center bg-[#993022] rounded-full w-10 h-10">
+//               <MdEmail className="inline-block text-white text-[20px]" />
+//             </div>
+//             <span>takenewlooks@gmail.com</span>
+//           </div>
+//           <div className="mb-8 flex items-center space-x-4">
+//             <div className="flex items-center justify-center bg-[#fbab18] rounded-full w-10 h-10">
+//               <FaMapMarkerAlt className="inline-block text-white text-[20px]" />
+//             </div>
+//             <span>242 D2 JOHER TOWN LAHORE</span>
+//           </div>
+//           <div className="flex space-x-4">
+//             <div className="flex items-center justify-center bg-[#4d68a1] rounded-full w-10 h-10">
+//               <a href="#" className="text-white hover:text-blue-800">
+//                 <FaFacebookF size={24} />
+//               </a>
+//             </div>
+//             <div className="flex items-center justify-center bg-[#962fbf] rounded-full w-10 h-10">
+//               <a href="#" className="text-white hover:text-blue-800">
+//                 <CiInstagram size={24} />
+//               </a>
+//             </div>
+//             <div className="flex items-center justify-center bg-[#0077b5] rounded-full w-10 h-10">
+//               <a href="#" className="text-white hover:text-blue-800">
+//                 <CiLinkedin size={24} />
+//               </a>
+//             </div>
+//           </div>
+//         </div>
+
+//         <div className="bg-white md:w-3/5 w-full p-8">
+//           <form>
+//             <div className="mb-4">
+//               <label
+//                 className="block text-gray-700 text-sm font-bold mb-2"
+//                 htmlFor="name"
+//               >
+//                 Name
+//               </label>
+//               <input
+//                 className="shadow border-border appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+//                 id="name"
+//                 type="text"
+//                 placeholder="Your Name"
+//               />
+//             </div>
+//             <div className="mb-4">
+//               <label
+//                 className="block text-gray-700 text-sm font-bold mb-2"
+//                 htmlFor="email"
+//               >
+//                 Email
+//               </label>
+//               <input
+//                 className="shadow border-border appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+//                 id="email"
+//                 type="email"
+//                 placeholder="Your Email"
+//               />
+//             </div>
+//             <div className="mb-4">
+//               <label
+//                 className="block text-gray-700 text-sm font-bold mb-2"
+//                 htmlFor="date"
+//               >
+//                 Date
+//               </label>
+//               <input
+//                 className="shadow border-border appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+//                 id="date"
+//                 type="date"
+//               />
+//             </div>
+//             <div className="mb-4">
+//               <label
+//                 className="block text-gray-700 text-sm font-bold mb-2"
+//                 htmlFor="time"
+//               >
+//                 Time
+//               </label>
+//               <input
+//                 className="shadow border-border appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+//                 id="time"
+//                 type="time"
+//               />
+//             </div>
+//             <div className="flex items-center justify-between">
+//               <button
+//                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+//                 type="button"
+//               >
+//                 Submit Request
+//               </button>
+//             </div>
+//           </form>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default BookMeeting;
 import React, { useEffect } from "react";
 import { CiInstagram, CiLinkedin } from "react-icons/ci";
-import {
-  FaPhoneAlt,
-  FaMapMarkerAlt,
-  FaFacebookF,
-} from "react-icons/fa";
+import { FaPhoneAlt, FaMapMarkerAlt, FaFacebookF } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const BookMeeting = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div className="min-h-screen">
+      {/* Banner Section */}
       <section className="-z-10 relative">
         <div
           className="h-[400px] bg-cover bg-center"
@@ -21,14 +151,17 @@ const BookMeeting = () => {
             backgroundImage: "url('/assets/banner/page-banner-1.jpg')",
           }}
         >
-            <div className="absolute inset-0 bg-blue-500/70 opacity-40"></div></div>
+          <div className="absolute inset-0 bg-blue-500/70 opacity-40"></div>
+        </div>
       </section>
 
-      <div className="flex flex-col md:flex-row bg-white shadow-lg mx-6 sm:mx-10 -mt-10 rounded-[50px]">
+      {/* Main Content */}
+      <div className="flex flex-col md:flex-row bg-white shadow-lg mx-6 sm:mx-10 -mt-10 rounded-[50px] overflow-hidden">
+        {/* Contact Info Section */}
         <div className="bg-grey500 md:w-2/5 w-full p-8 flex flex-col items-start justify-center">
           <div className="mb-8 flex items-center space-x-4">
             <div className="flex items-center justify-center bg-[#41af1e] rounded-full w-10 h-10">
-              <FaPhoneAlt className="inline-block text-white " />
+              <FaPhoneAlt className="inline-block text-white" />
             </div>
             <span>+92 3144363910</span>
           </div>
@@ -46,24 +179,26 @@ const BookMeeting = () => {
           </div>
           <div className="flex space-x-4">
             <div className="flex items-center justify-center bg-[#4d68a1] rounded-full w-10 h-10">
-            <a href="#" className="text-white hover:text-blue-800">
-              <FaFacebookF size={24} />
-            </a>
+              <a href="#" className="text-white hover:text-blue-800">
+                <FaFacebookF size={24} />
+              </a>
             </div>
             <div className="flex items-center justify-center bg-[#962fbf] rounded-full w-10 h-10">
-            <a href="#" className="text-white hover:text-blue-800">
-              <CiInstagram size={24} />
-            </a>
+              <a href="#" className="text-white hover:text-blue-800">
+                <CiInstagram size={24} />
+              </a>
             </div>
             <div className="flex items-center justify-center bg-[#0077b5] rounded-full w-10 h-10">
-            <a href="#" className="text-white hover:text-blue-800">
-              <CiLinkedin size={24} />
-            </a>
+              <a href="#" className="text-white hover:text-blue-800">
+                <CiLinkedin size={24} />
+              </a>
             </div>
           </div>
         </div>
 
-        <div className="bg-white md:w-3/5 w-full p-8">
+        {/* Form Section */}
+        <div className="bg-white md:w-3/5 w-full p-8 ">
+          <h2 className="text-2xl font-bold text-gray-800 mb-6">Book a Meeting</h2>
           <form>
             <div className="mb-4">
               <label
@@ -73,7 +208,7 @@ const BookMeeting = () => {
                 Name
               </label>
               <input
-                className="shadow border-border appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow appearance-none border border-border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
                 id="name"
                 type="text"
                 placeholder="Your Name"
@@ -87,7 +222,7 @@ const BookMeeting = () => {
                 Email
               </label>
               <input
-                className="shadow border-border appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow appearance-none border border-border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
                 id="email"
                 type="email"
                 placeholder="Your Email"
@@ -101,7 +236,7 @@ const BookMeeting = () => {
                 Date
               </label>
               <input
-                className="shadow border-border appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow appearance-none border border-border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
                 id="date"
                 type="date"
               />
@@ -114,14 +249,14 @@ const BookMeeting = () => {
                 Time
               </label>
               <input
-                className="shadow border-border appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow appearance-none border border-border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
                 id="time"
                 type="time"
               />
             </div>
             <div className="flex items-center justify-between">
               <button
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"
                 type="button"
               >
                 Submit Request

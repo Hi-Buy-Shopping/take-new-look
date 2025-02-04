@@ -6,7 +6,6 @@ const Newsletter = () => {
             <div className="mx-auto max-w-2xl lg:max-w-7xl bg-blue-500 rounded-3xl">
                 <div className="grid grid-cols-1 gap-y-10 gap-x-6 lg:grid-cols-2 xl:gap-x-8">
 
-                    {/* COLUMN-1 */}
                     <div className='hidden lg:block'>
                         <div className='float-right pt-20 relative'>
                             <img src={'/assets/newsletter/bgImage.png'} alt="bgimg" width={588} height={334} />
@@ -19,12 +18,11 @@ const Newsletter = () => {
                         </div>
                     </div>
 
-                    {/* COLUMN-2 */}
                     <div className="p-10 flex flex-col justify-center">
                         <h3 className="text-4xl md:text-5xl font-semibold mb-3 text-white">Sign up to our newsletter.</h3>
                         <h4 className="text-base font-normal mb-7 text-offwhite">Sign up to our newsletter now and let us bring the best of our world directly to yours—updates, offers, and inspiration await!.</h4>
                         <div className="flex gap-0">
-                            <input type="Email address" name="q" className="py-4 text-sm w-full text-black bg-white rounded-l-lg pl-4" placeholder="@enter email-address" autoComplete="off" />
+                            <input type="Email address" name="q" className="py-4 text-sm w-full text-black bg-white rounded-l-lg pl-4 outline-none" placeholder="@enter email-address" autoComplete="off" />
                             <button className="bg-midblue text-white font-medium py-2 px-4 rounded-r-lg">
                                 <img src={'/assets/newsletter/plane.svg'} alt="plane-img" width={20} height={20} />
                             </button>

@@ -3,6 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -23,6 +26,7 @@ html:not([data-scroll="0"]) .navbar {
     padding: 0px !important;
     z-index: 99;
 }
+
 
 .leafbutton {
     border-radius: 0px 30px 30px 40px;

@@ -21,7 +21,7 @@ const Register = () => {
           <Link to={"/contact-us"}>
             <button
               className="text-blue text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out leafbutton bg-lightblue hover:text-white hover:bg-blue"
-              onClick={openModal}
+              // onClick={openModal}
             >
               Contact Us
             </button>
